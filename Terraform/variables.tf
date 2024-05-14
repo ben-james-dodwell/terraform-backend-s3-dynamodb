@@ -3,7 +3,7 @@ variable "backend_bucket" {
     default = "terraform-state"
 }
 
-variable "dynamo_table" {
+variable "backend_dynamo_table" {
     type = string
     default = "terraform-state"
 }

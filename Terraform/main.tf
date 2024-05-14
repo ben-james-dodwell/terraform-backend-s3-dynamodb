@@ -35,7 +35,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "terraform_encrypt
 }
 
 resource "aws_dynamodb_table" "terraform_table" {
-  name           = var.dynamo_table
+  name           = var.backend_dynamo_table
   read_capacity  = 5
   write_capacity = 5
   hash_key       = "LockID"
